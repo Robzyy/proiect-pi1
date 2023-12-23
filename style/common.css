@@ -121,10 +121,16 @@ section h1 {
 
 .answer-wrapper {
     flex-grow: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
+    display: none;
+
+    & p{
+        font-size: 20px;
+        margin-top: 16px;
+        margin-left: 4px;
+    }
 }
 
 @media only screen and (max-width: 670px) {

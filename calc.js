@@ -43,7 +43,9 @@ function calculate() {
     }
 
     response = table[tableRow][clsTol - 1];
-    // console.log(response);
+    
+    const ansWrapper = document.getElementById("answer-wrapper");
+    ansWrapper.style.display = "flex";
     document.getElementById("answer").innerText = response;
   }
 }
