@@ -1,3 +1,5 @@
+// Asa se face, Iustin <3
+
 const table = [
   [0.3, 0.5, 0.8, 1.2, 2, 3, 5, 8, 12, 20, 30, 50],
   [0.4, 0.6, 1, 1.6, 2.5, 4, 6, 10, 16, 25, 40, 60],
@@ -10,6 +12,11 @@ const table = [
   [2, 3, 5, 8, 12, 20, 30, 50, 80, 120, 200, 300],
   [2.5, 4, 6, 10, 16, 25, 40, 60, 100, 160, 250, 400],
 ];
+
+document.getElementById("myform").addEventListener("submit", (e) =>
+{
+    e.preventDefault();
+})
 
 function calculate() {
   const DOMdimensiuneNominala = document.getElementById("d-nominala");
@@ -43,7 +50,7 @@ function calculate() {
     }
 
     response = table[tableRow][clsTol - 1];
-    
+
     const ansWrapper = document.getElementById("answer-wrapper");
     ansWrapper.style.display = "flex";
     document.getElementById("answer").innerText = response;
